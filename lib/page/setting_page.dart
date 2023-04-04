@@ -1,3 +1,4 @@
+import 'package:bnn_pudding/page/setting_page/setting_list.dart';
 import 'package:flutter/material.dart';
 
 class SettingPage extends StatelessWidget {
@@ -5,10 +6,8 @@ class SettingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text('Setting Page'),
-      ),
+    return SingleChildScrollView(
+      child: SettingList(),
     );
   }
 }
